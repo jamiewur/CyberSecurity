@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<br lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="handleFile.js" type="text/javascript"></script>
+    <script src="AES.js" type="text/javascript"></script>
+    <script src="sjcl.js" type="text/javascript"></script>
+
+</head>
+<br>
+<h1>AES Encryption-Decryption</h1>
+</br>
+32 hexadecimal digits key (128 bits):  <input type="text" name="key" id="key" >
+</br>
+</br>
+Choose a file: <input type="file" onchange="loadFile(this)">
+</br>
+</br>
+File contents:<textarea type="text" id="contents" name="contents" rows="5" cols="50"></textarea>
+</br>
+Message for authentication: <input type="text" id="hmacP" name="hmacP">
+</br>
+<button type="submit" onclick="encryption()">Encryption</button>
+<button type="submit" onclick="decryption()">Decryption</button>
+</br>
+</br>
+Encrypted file:<textarea type="text" id="cipher" name="cipher" rows="5" cols="50"></textarea>
+</br>
+HMAC:<input type="text" id="hmacC" name="hmacC">
+</br>
+Save file: <input type="text" value="EncryptedFile.txt" id="fileName">
+<button type="submit" id="save" onclick="saveFile()">Save to file</button>
+</br>
+Save file with encrypted info: <input type="text" value="EncryptedFileInfo.txt" id="fileName2">
+<button type="submit" onclick="saveFile2()">Save to file</button>
+</body>
+</html>

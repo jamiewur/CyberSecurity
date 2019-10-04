@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CsLab4-D</title>
+</head>
+<body>
+Binary Number: <INPUT TYPE="number" NAME="Item" SIZE="25" id="DeciInput"><BR>
+<INPUT TYPE="SUBMIT" VALUE="Convert" onclick="deci()">
+<p id="Decimal"></p>
+<script>
+    function deci() {
+        var str = document.getElementById("DeciInput").value
+        document.getElementById("Decimal").innerHTML =parseInt(str,2).toString(10)
+
+    }
+
+</script>
+</body>
+</html>

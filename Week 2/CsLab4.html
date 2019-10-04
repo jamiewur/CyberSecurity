@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CsLab4</title>
+</head>
+<body>
+Decimal Number: <INPUT TYPE="number" NAME="Item" SIZE="25" id="BinaryInput"><BR>
+<INPUT TYPE="SUBMIT" VALUE="Convert" onclick="bi()">
+<p id="Binary"></p>
+<script>
+    function bi() {
+        var str = document.getElementById("BinaryInput").value
+        document.getElementById("Binary").innerHTML = padding(parseInt(str,10).toString(2))
+    }
+    function padding(number) {
+        const pad = "00000000";
+        const padded = pad.substring(0, pad.length - number.length) +number;
+        return padded;
+    }
+
+</script>
+</body>
+</html>

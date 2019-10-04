@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <head>RSA Implemention</head>
+    <script src="RSAImplemention.js"></script>
+</head>
+<body>
+<table>
+    <tbody>
+    <tr>
+        <th>prime p:</th>
+        <th><input type="number" size="10" id="p-value" name="p-value" onchange="callShows()"></th>
+    </tr>
+    <tr>
+        <th>prime q:</th>
+        <th><input type="number" size="10" id="q-value" name="q-value" onchange="callShows()"></th>
+    </tr>
+    <tr>
+        <th>n = p*q:</th>
+        <th><input type="number" size="10" id="n-value"></th>
+    </tr>
+    <tr>
+        <th>Φ(n)=(p-1)*(q-1):</th>
+        <th><input type="number" size="10" id="x-value"></th>
+    </tr>
+    <tr>
+        <th>e:</th>
+        <th><input type="number" size="20" id="e-value"></th>
+        <th><input type="submit" id="generate-e" name="generate-e" value="Generate e" onclick="showE()"></th>
+        </th>
+    </tr>
+    <tr>
+        <th>d:</th>
+        <th><input type="number" size="20" id="d-value"></th>
+        <th><input type="submit" id="generate-d" name="generate-d" value="Generate d" onclick="showD()"></th>
+        </th>
+    </tr>
+    <tr>
+        <th>message:</th>
+        <th><input type="number" id="m-value" name="m-value"></th>
+        <th><input type="submit" id="signing" name="singing" value="Signing" onclick="showSignature()"></th>
+    </tr>
+    <tr>
+        <th>signature:</th>
+        <th><input type="number" id="s-value" name="s-value"></th>
+        <th><input type="submit" id="verifying" name="verifying" value="Verifying" onclick="showVerify()"></th>
+        <th><input type="submit" id="clear" name="clear" value="Clear Message" onclick=""></th>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

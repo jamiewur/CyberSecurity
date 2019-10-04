@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Q1</title>
+</head>
+<body>
+Input Number: <INPUT TYPE="number" NAME="Item" SIZE="25" id="myInput"><BR>
+<p id="show"></p>
+<br><br>
+<INPUT TYPE="SUBMIT" VALUE="Try it" onclick="check()">
+<script>
+    function check(){
+        const a = Math.floor((Math.random() * 10) + 1);
+        if(a === Number(document.getElementById("myInput").value)) {
+            document.getElementById("show").innerText = "You get the right answer!"
+        }
+        else document.getElementById("show").innerText = "Not Matched! Correct Number"+ a;
+    }
+</script>
+</body>
+</html>

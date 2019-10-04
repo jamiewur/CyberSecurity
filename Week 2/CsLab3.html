@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CsLab3</title>
+</head>
+<body>
+Input string: <INPUT TYPE="text" NAME="Item" SIZE="25" id="Input3"><BR>
+<INPUT TYPE="SUBMIT" VALUE="Convert" onclick="ascII()">
+<p id="asc"></p>
+<script>
+   function ascII() {
+       var str = document.getElementById("Input3").value
+       let ascNumber = ""
+       for(let i=0; i<str.length;i++){
+           ascNumber += str.charCodeAt(i)+" ";
+       }
+       document.getElementById("asc").innerHTML = ascNumber
+   }
+
+
+</script>
+</body>
+</html>

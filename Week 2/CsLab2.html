@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cslab2</title>
+</head>
+<body>
+1st Number: <INPUT TYPE="number" NAME="Item" SIZE="25" id="Input1"><BR>
+2nd Number: <INPUT TYPE="number" NAME="Item" SIZE="25" id="Input2"><BR>
+<INPUT TYPE="SUBMIT" VALUE="Multiply" onclick="multiply()">
+<INPUT TYPE="text" NAME="Item" SIZE="25" id="multout"><BR>
+<INPUT TYPE="SUBMIT" VALUE="Divide" onclick="divide()">
+<INPUT TYPE="text" NAME="Item" SIZE="25" id="divideout"><BR>
+
+<script>
+    function multiply(){
+        document.getElementById("multout").value = Number(document.getElementById("Input1").value) * Number(document.getElementById("Input2").value)
+    }
+    function divide() {
+        document.getElementById("divideout").value = Number(document.getElementById("Input1").value) / Number(document.getElementById("Input2").value)
+    }
+
+</script>
+</body>
+</html>

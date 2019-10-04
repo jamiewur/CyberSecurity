@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment</title>
+    <script src="./Fucntions/θMapping.js"></script>
+    <script src="./Fucntions/πMapping.js"></script>
+    <script src="./Fucntions/χMapping.js"></script>
+    <script src="./Fucntions/ιMapping.js"></script>
+    <script src="./Fucntions/Keccak.js"></script>
+</head>
+<body>
+<h1>Keccak</h1>
+<h3>θ Input Array :</h3>
+<table style="background-color: aqua">
+    <tr>
+        <td><input type="number" min="0" max="1" id="θi04"></td>
+        <td><input type="number" min="0" max="1" id="θi14"></td>
+        <td><input type="number" min="0" max="1" id="θi24"></td>
+        <td><input type="number" min="0" max="1" id="θi34"></td>
+        <td><input type="number" min="0" max="1" id="θi44"></td>
+    </tr>
+    <tr>
+        <td><input type="number" min="0" max="1" id="θi03"></td>
+        <td><input type="number" min="0" max="1" id="θi13"></td>
+        <td><input type="number" min="0" max="1" id="θi23"></td>
+        <td><input type="number" min="0" max="1" id="θi33"></td>
+        <td><input type="number" min="0" max="1" id="θi43"></td>
+    </tr>
+    <tr>
+        <td><input type="number" min="0" max="1" id="θi02"></td>
+        <td><input type="number" min="0" max="1" id="θi12"></td>
+        <td><input type="number" min="0" max="1" id="θi22"></td>
+        <td><input type="number" min="0" max="1" id="θi32"></td>
+        <td><input type="number" min="0" max="1" id="θi42"></td>
+    </tr>
+    <tr>
+        <td><input type="number" min="0" max="1" id="θi01"></td>
+        <td><input type="number" min="0" max="1" id="θi11"></td>
+        <td><input type="number" min="0" max="1" id="θi21"></td>
+        <td><input type="number" min="0" max="1" id="θi31"></td>
+        <td><input type="number" min="0" max="1" id="θi41"></td>
+    </tr>
+    <tr>
+        <td><input type="number" min="0" max="1" id="θi00"></td>
+        <td><input type="number" min="0" max="1" id="θi10"></td>
+        <td><input type="number" min="0" max="1" id="θi20"></td>
+        <td><input type="number" min="0" max="1" id="θi30"></td>
+        <td><input type="number" min="0" max="1" id="θi40"></td>
+    </tr>
+</table>
+<br>
+<Button onclick="Keccakθ()">θ mapping</Button>
+<h3>θ Output Array :</h3>
+<table style="background-color: aqua">
+    <tr>
+        <td><input type="number" min="0" max="1" id="θo04"></td>
+        <td><input type="number" min="0" max="1" id="θo14"></td>
+        <td><input type="number" min="0" max="1" id="θo24"></td>
+        <td><input type="number" min="0" max="1" id="θo34"></td>
+        <td><input type="number" min="0" max="1" id="θo44"></td>
+    </tr>
+    <tr>
+        <td><input type="number" min="0" max="1" id="θo03"></td>
+        <td><input type="number" min="0" max="1" id="θo13"></td>
+        <td><input type="number" min="0" max="1" id="θo23"></td>
+        <td><input type="number" min="0" max="1" id="θo33"></td>
+        <td><input type="number" min="0" max="1" id="θo43"></td>
+    </tr>
+    <tr>
+        <td><input type="number" min="0" max="1" id="θo02"></td>
+        <td><input type="number" min="0" max="1" id="θo12"></td>
+        <td><input type="number" min="0" max="1" id="θo22"></td>
+        <td><input type="number" min="0" max="1" id="θo32"></td>
+        <td><input type="number" min="0" max="1" id="θo42"></td>
+    </tr>
+    <tr>
+        <td><input type="number" min="0" max="1" id="θo01"></td>
+        <td><input type="number" min="0" max="1" id="θo11"></td>
+        <td><input type="number" min="0" max="1" id="θo21"></td>
+        <td><input type="number" min="0" max="1" id="θo31"></td>
+        <td><input type="number" min="0" max="1" id="θo41"></td>
+    </tr>
+    <tr>
+        <td><input type="number" min="0" max="1" id="θo00"></td>
+        <td><input type="number" min="0" max="1" id="θo10"></td>
+        <td><input type="number" min="0" max="1" id="θo20"></td>
+        <td><input type="number" min="0" max="1" id="θo30"></td>
+        <td><input type="number" min="0" max="1" id="θo40"></td>
+    </tr>
+</table>
+<br>
+<Button onclick="Keccakπ()">π mapping</Button>
+<h3>π Output Array :</h3>
+<table style="background-color: aqua">
+    <tr>
+        <td><input type="number" min="0" max="1" id="πo04"></td>
+        <td><input type="number" min="0" max="1" id="πo14"></td>
+        <td><input type="number" min="0" max="1" id="πo24"></td>
+        <td><input type="number" min="0" max="1" id="πo34"></td>
+        <td><input type="number" min="0" max="1" id="πo44"></td>
+    </tr>
+    <tr>
+        <td><input type="number" min="0" max="1" id="πo03"></td>
+        <td><input type="number" min="0" max="1" id="πo13"></td>
+        <td><input type="number" min="0" max="1" id="πo23"></td>
+        <td><input type="number" min="0" max="1" id="πo33"></td>
+        <td><input type="number" min="0" max="1" id="πo43"></td>
+    </tr>
+    <tr>
+        <td><input type="number" min="0" max="1" id="πo02"></td>
+        <td><input type="number" min="0" max="1" id="πo12"></td>
+        <td><input type="number" min="0" max="1" id="πo22"></td>
+        <td><input type="number" min="0" max="1" id="πo32"></td>
+        <td><input type="number" min="0" max="1" id="πo42"></td>
+    </tr>
+    <tr>
+        <td><input type="number" min="0" max="1" id="πo01"></td>
+        <td><input type="number" min="0" max="1" id="πo11"></td>
+        <td><input type="number" min="0" max="1" id="πo21"></td>
+        <td><input type="number" min="0" max="1" id="πo31"></td>
+        <td><input type="number" min="0" max="1" id="πo41"></td>
+    </tr>
+    <tr>
+        <td><input type="number" min="0" max="1" id="πo00"></td>
+        <td><input type="number" min="0" max="1" id="πo10"></td>
+        <td><input type="number" min="0" max="1" id="πo20"></td>
+        <td><input type="number" min="0" max="1" id="πo30"></td>
+        <td><input type="number" min="0" max="1" id="πo40"></td>
+    </tr>
+</table>
+<br>
+<Button onclick="keccakχ()">χ mapping</Button>
+<h3>χ Output Array :</h3>
+<table style="background-color: aqua">
+    <tr>
+        <td><input type="number" min="0" max="1" id="χo04"></td>
+        <td><input type="number" min="0" max="1" id="χo14"></td>
+        <td><input type="number" min="0" max="1" id="χo24"></td>
+        <td><input type="number" min="0" max="1" id="χo34"></td>
+        <td><input type="number" min="0" max="1" id="χo44"></td>
+    </tr>
+    <tr>
+        <td><input type="number" min="0" max="1" id="χo03"></td>
+        <td><input type="number" min="0" max="1" id="χo13"></td>
+        <td><input type="number" min="0" max="1" id="χo23"></td>
+        <td><input type="number" min="0" max="1" id="χo33"></td>
+        <td><input type="number" min="0" max="1" id="χo43"></td>
+    </tr>
+    <tr>
+        <td><input type="number" min="0" max="1" id="χo02"></td>
+        <td><input type="number" min="0" max="1" id="χo12"></td>
+        <td><input type="number" min="0" max="1" id="χo22"></td>
+        <td><input type="number" min="0" max="1" id="χo32"></td>
+        <td><input type="number" min="0" max="1" id="χo42"></td>
+    </tr>
+    <tr>
+        <td><input type="number" min="0" max="1" id="χo01"></td>
+        <td><input type="number" min="0" max="1" id="χo11"></td>
+        <td><input type="number" min="0" max="1" id="χo21"></td>
+        <td><input type="number" min="0" max="1" id="χo31"></td>
+        <td><input type="number" min="0" max="1" id="χo41"></td>
+    </tr>
+    <tr>
+        <td><input type="number" min="0" max="1" id="χo00"></td>
+        <td><input type="number" min="0" max="1" id="χo10"></td>
+        <td><input type="number" min="0" max="1" id="χo20"></td>
+        <td><input type="number" min="0" max="1" id="χo30"></td>
+        <td><input type="number" min="0" max="1" id="χo40"></td>
+    </tr>
+</table>
+<br>
+<Button onclick="Keccakι()">ι mapping</Button>
+<h3>ι Output Array :</h3>
+<table style="background-color: aqua">
+    <tr>
+        <td><input type="number" min="0" max="1" id="ιo04"></td>
+        <td><input type="number" min="0" max="1" id="ιo14"></td>
+        <td><input type="number" min="0" max="1" id="ιo24"></td>
+        <td><input type="number" min="0" max="1" id="ιo34"></td>
+        <td><input type="number" min="0" max="1" id="ιo44"></td>
+    </tr>
+    <tr>
+        <td><input type="number" min="0" max="1" id="ιo03"></td>
+        <td><input type="number" min="0" max="1" id="ιo13"></td>
+        <td><input type="number" min="0" max="1" id="ιo23"></td>
+        <td><input type="number" min="0" max="1" id="ιo33"></td>
+        <td><input type="number" min="0" max="1" id="ιo43"></td>
+    </tr>
+    <tr>
+        <td><input type="number" min="0" max="1" id="ιo02"></td>
+        <td><input type="number" min="0" max="1" id="ιo12"></td>
+        <td><input type="number" min="0" max="1" id="ιo22"></td>
+        <td><input type="number" min="0" max="1" id="ιo32"></td>
+        <td><input type="number" min="0" max="1" id="ιo42"></td>
+    </tr>
+    <tr>
+        <td><input type="number" min="0" max="1" id="ιo01"></td>
+        <td><input type="number" min="0" max="1" id="ιo11"></td>
+        <td><input type="number" min="0" max="1" id="ιo21"></td>
+        <td><input type="number" min="0" max="1" id="ιo31"></td>
+        <td><input type="number" min="0" max="1" id="ιo41"></td>
+    </tr>
+    <tr>
+        <td><input type="number" min="0" max="1" id="ιo00"></td>
+        <td><input type="number" min="0" max="1" id="ιo10"></td>
+        <td><input type="number" min="0" max="1" id="ιo20"></td>
+        <td><input type="number" min="0" max="1" id="ιo30"></td>
+        <td><input type="number" min="0" max="1" id="ιo40"></td>
+    </tr>
+</table>
+<br>
+<Button onclick="Keccak()">Functions mapping</Button>
+<br>
+Round: <p id="round">0</p>
+</body>
+</html>
