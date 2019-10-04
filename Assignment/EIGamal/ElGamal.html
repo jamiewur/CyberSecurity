@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ElGamal</title>
+</head>
+<body>
+<h1>ElGamal</h1>
+<br>
+Key Generation: <input type="number" id="key">
+<button onclick="generateKey()">Generate Key</button>
+<br>
+<br>
+Input Message: <input type="number" id="message">
+<button onclick="encryptMessage()">Encrypt Message</button>
+<br>
+<br>
+Ciphertext : <input type="number" id="ciphertext">
+<button onclick="decryptMessage()">Decrypt Message</button>
+<br>
+<br>
+Plaintext: <input type="number" id="plaintext">
+<br>
+<br>
+<br>
+<table>
+    <tr>
+        <td></td>
+        <td align="center">Input</td>
+        <td align="center">Ciphertext</td>
+        <td></td>
+        <td align="center">Multiplication</td>
+        <td></td>
+        <td align="center">Decryption Result</td>
+    </tr>
+    <tr>
+        <td>Number 1: </td>
+        <td><input type="number" id="n1i" min="0" max="100000000"></td>
+        <td><input type="number" id="n1o" min="0" max="100000000"></td>
+        <td>     </td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Number 2: </td>
+        <td><input type="number" id="n2i" min="0" max="100000000"></td>
+        <td><input type="number" id="n2o" min="0" max="100000000"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Number 3: </td>
+        <td><input type="number" id="n3i" min="0" max="100000000"></td>
+        <td><input type="number" id="n3o" min="0" max="100000000"></td>
+        <td>     </td>
+        <td><input type="number" id="multiply"></td>
+        <td></td>
+        <td><input type="number" id="result"></td>
+    </tr>
+    <tr>
+        <td>Number 4: </td>
+        <td><input type="number" id="n4i" min="0" max="100000000"></td>
+        <td><input type="number" id="n4o" min="0" max="100000000"></td>
+        <td>     </td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Number 5: </td>
+        <td><input type="number" id="n5i" min="0" max="100000000"></td>
+        <td><input type="number" id="n5o" min="0" max="100000000"></td>
+        <td>     </td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
+<br>
+<button onclick="multiFunction()">Multiplication</button>
+</body>
+</html>
