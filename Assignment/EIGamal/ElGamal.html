@@ -3,12 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <title>ElGamal</title>
+    <script src="./EFunctions/elgamal.js"></script>
 </head>
 <body>
 <h1>ElGamal</h1>
 <br>
-Key Generation: <input type="number" id="key">
-<button onclick="generateKey()">Generate Key</button>
+Key Generation
+<br>
+q: <input type="number" id="q">
+<button onclick="generateq()">Generate q</button>
+prime number
+<br>
+g: <input type="number" id="g">
+<button onclick="generateg()">Generate g</button>
+a primitive root of q
+<br>
+Private Key: <input type="number" id="privatekey">
+<button onclick="generatePrivateKey()">Generate Private Key</button>
+1 < x < q
+<br>
+Public Key: <input type="number" id="publickey">
+<button onclick="generatePublicKey()">Generate Public Key</button>
+{q, g, y}
 <br>
 <br>
 Input Message: <input type="number" id="message">
@@ -30,8 +46,8 @@ Plaintext: <input type="number" id="plaintext">
         <td align="center">Ciphertext</td>
         <td></td>
         <td align="center">Multiplication</td>
-        <td></td>
-        <td align="center">Decryption Result</td>
+        <td align="center">Decryption Result></td>
+        <td align="center">InputResult Result</td>
     </tr>
     <tr>
         <td>Number 1: </td>
