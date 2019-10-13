@@ -11,31 +11,42 @@
 Key Generation
 <br>
 q: <input type="number" id="q">
-<button onclick="generateq()">Generate q</button>
-prime number
+Prime Number
 <br>
 g: <input type="number" id="g">
-<button onclick="generateg()">Generate g</button>
-a primitive root of q
+A primitive root of q
 <br>
-Private Key: <input type="number" id="privatekey">
+<br>
+Private Key:
+<br>
+x: <input type="number" id="privatekey">
 <button onclick="generatePrivateKey()">Generate Private Key</button>
-1 < x < q
 <br>
-Public Key: <input type="number" id="publickey">
+Public Key:
+<br>
+y: <input type="number" id="publickey">
 <button onclick="generatePublicKey()">Generate Public Key</button>
-{q, g, y}
+<p type="text" id="allpublickey"></p>
 <br>
+<br>
+Random Integer: <input type="number" id="k">
+<button onclick="genRandomK()">Generate Integer</button>
 <br>
 Input Message: <input type="number" id="message">
 <button onclick="encryptMessage()">Encrypt Message</button>
 <br>
 <br>
-Ciphertext : <input type="number" id="ciphertext">
-<button onclick="decryptMessage()">Decrypt Message</button>
+Ciphertext :
+<br>
+C1: <input type="number" id="c1">
+<br>
+C2: <input type="number" id="c2">
+<br>
+<input type="text" id="ciphertext">
 <br>
 <br>
 Plaintext: <input type="number" id="plaintext">
+<button onclick="decryptMessage()">Decrypt Message</button>
 <br>
 <br>
 <br>
