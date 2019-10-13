@@ -10,8 +10,11 @@
 <br>
 Key Generation
 <br>
-q: <input type="number" id="q">
+p: <input type="number" id="p">
 Prime Number
+<br>
+q: <input type="number" id="q">
+Prime Order
 <br>
 g: <input type="number" id="g">
 A primitive root of q
@@ -54,27 +57,27 @@ Plaintext: <input type="number" id="plaintext">
     <tr>
         <td></td>
         <td align="center">Input</td>
+        <td align="center">Multi-Input</td>
         <td align="center">Ciphertext</td>
-        <td></td>
-        <td align="center">Multiplication</td>
-        <td align="center">Decryption Result></td>
-        <td align="center">InputResult Result</td>
+        <td align="center">k</td>
+        <td align="center"></td>
+        <td align="center">Decryption Result</td>
     </tr>
     <tr>
         <td>Number 1: </td>
         <td><input type="number" id="n1i" min="0" max="100000000"></td>
-        <td><input type="number" id="n1o" min="0" max="100000000"></td>
-        <td>     </td>
         <td></td>
+        <td></td>
+        <td><input type="number" id="k1" min="0" max="100000000"></td>
         <td></td>
         <td></td>
     </tr>
     <tr>
         <td>Number 2: </td>
         <td><input type="number" id="n2i" min="0" max="100000000"></td>
-        <td><input type="number" id="n2o" min="0" max="100000000"></td>
         <td></td>
-        <td></td>
+        <td><input type="number" id="c1o"></td>
+        <td><input type="number" id="k2" min="0" max="100000000"></td>
         <td></td>
         <td></td>
         <td></td>
@@ -82,27 +85,27 @@ Plaintext: <input type="number" id="plaintext">
     <tr>
         <td>Number 3: </td>
         <td><input type="number" id="n3i" min="0" max="100000000"></td>
-        <td><input type="number" id="n3o" min="0" max="100000000"></td>
-        <td>     </td>
-        <td><input type="number" id="multiply"></td>
+        <td><input type="number" id="multinput" min="0" max="100000000"></td>
+        <td><input type="number" id="c2o"></td>
+        <td><input type="number" id="k3" min="0" max="100000000"></td>
         <td></td>
-        <td><input type="number" id="result"></td>
+        <td><input type="number" id="Decypt-Result"></td>
     </tr>
     <tr>
         <td>Number 4: </td>
         <td><input type="number" id="n4i" min="0" max="100000000"></td>
-        <td><input type="number" id="n4o" min="0" max="100000000"></td>
-        <td>     </td>
         <td></td>
+        <td><input type="text" id="co" min="0" max="100000000"></td>
+        <td><input type="number" id="k4" min="0" max="100000000"></td>
         <td></td>
         <td></td>
     </tr>
     <tr>
         <td>Number 5: </td>
         <td><input type="number" id="n5i" min="0" max="100000000"></td>
-        <td><input type="number" id="n5o" min="0" max="100000000"></td>
-        <td>     </td>
         <td></td>
+        <td></td>
+        <td><input type="number" id="k5" min="0" max="100000000"></td>
         <td></td>
         <td></td>
     </tr>
